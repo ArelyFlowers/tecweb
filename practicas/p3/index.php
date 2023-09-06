@@ -26,6 +26,17 @@
         echo '<li>$_element1 es válida porque inicia con guión bajo.</li>';
         echo '</ul>';
 
+        echo "<h2> Ejercicio 2</h2>";
+        echo "<p> Proporcionar los valores de $ a, $ b, $ c como sigue:</p>";
+        $a = "ManejadorSQL"; 
+        $b = 'MySQL'; 
+        $c = &$a;
+
+        echo "<h3> Ahora muestra el contenido de cada variable </h3>";
+
+        echo $a; echo "<br>";
+        echo $b; echo "<br>";
+        echo $c; 
 
     ?>
 </body>
