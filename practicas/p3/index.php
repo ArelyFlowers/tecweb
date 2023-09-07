@@ -113,6 +113,20 @@
             $z[0] = "MySQL"; $GLOBALS['z']=$z;
             echo "\$z[0] = \"MySQL\"; El tipo de dato es: \$z[0]:
              ".gettype($z[0])."\n"; 
+
+
+            echo "<h2> Ejercicio 5. </h2>";
+            echo "<p> Dar el valor de las variables $ a, $ b, $ c al final del siguiente script:  </p>";
+
+            echo "\$a = 7 personas; \n"; echo " El valor de $ a es= 9E3 ";
+            echo "<br>";
+            echo "\$b = (integer) $ a; \n"; echo " El valor de  $ b es: 7";
+            echo "<br>";
+            echo "\$c = (double) $ a;  \n"; echo " El valor de $ c es: 9000 ";
+
+
+
+
         
 
 
