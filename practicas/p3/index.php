@@ -134,7 +134,7 @@
              $d = ($a OR $b);
              $e = ($a AND $c);
              $f = ($a XOR $b); 
-             
+
              var_dump($a); echo "<br>";
              var_dump($b); echo "<br>";
              var_dump($c); echo "<br>";
@@ -149,6 +149,16 @@
              echo"<br>";
              echo var_export($e, true); 
              echo"<br>";
+
+             echo "<h2> Ejercicio 7. </h2>";
+             echo "<p> Usando la variable predefinida $ _SERVER, determina lo siguiente:</p>";
+             echo "<p> a. La versión de Apache y PHP  </p>";
+
+             $server_software = ($_SERVER['SERVER_SOFTWARE']);
+             $php_version = phpversion();
+
+                echo "La versión de Apache es: $server_software\n"; echo"<br>";
+                echo "La versión de PHP es: $php_version\n";
 
 
 
