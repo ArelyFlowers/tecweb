@@ -86,6 +86,33 @@
             $z[0] = "MySQL";
             echo "\$z[0] = \"MySQL\"; El tipo de dato es: \$z[0]: ". gettype($z[0])."\n";
 
+
+            echo "<h2> Ejercicio 4. </h2>";
+            echo "<p> Lee y muestra los valores de las variables del ejercicio anterior, </p>";
+            echo "<p>pero ahora con la ayuda de  la matriz $ GLOBALS o del modificador global de PHP. </p>";
+
+            $a = "PHP5"; $GLOBALS['a']=$a;
+            echo "\$a = \"$a\"; El tipo de dato es: " .gettype($a)."\n"; 
+            echo "<br>";
+            $z[] = &$a; $GLOBALS['z']=$z;
+            echo "\$z[] = &\$a; El tipo de dato es: \$z: ".gettype($z) . ". 
+            El tipo de dato es: \$z[0]:".gettype($z[0])."\n"; 
+            echo "<br>";
+            $b = "5a version de PHP"; $GLOBALS['b']=$b;
+            echo "\$b = \"$b\"; El tipo de dato es: " .gettype($b)."\n"; 
+            echo "<br>";
+            @$c = $b * 10; $GLOBALS['c']=$c;
+            echo "\$c = \$b * 10; El tipo de dato es: ".gettype($c)."\n"; 
+            echo "<br>";
+            $a .= $b; $GLOBALS['a']=$a;
+            echo "\$a .= \$b; El tipo de dato es: ".gettype($a)."\n"; 
+            echo "<br>";
+            $b *= $c; $GLOBALS['b']=$b;
+            echo "\$b *= \$c; El tipo de dato es: ".gettype($b)."\n"; 
+            echo "<br>";
+            $z[0] = "MySQL"; $GLOBALS['z']=$z;
+            echo "\$z[0] = \"MySQL\"; El tipo de dato es: \$z[0]:
+             ".gettype($z[0])."\n"; 
         
 
 
