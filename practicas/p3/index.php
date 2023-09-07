@@ -160,6 +160,13 @@
                 echo "La versión de Apache es: $server_software\n"; echo"<br>";
                 echo "La versión de PHP es: $php_version\n";
 
+                echo "<p>  b. El nombre del sistema operativo (servidor)</p>";
+
+                $server_os = php_uname('s');
+                echo "El nombre del sistema operativo (servidor) es: $server_os\n";
+
+
+
 
 
 
