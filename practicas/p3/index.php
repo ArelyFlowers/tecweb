@@ -165,6 +165,13 @@
                 $server_os = php_uname('s');
                 echo "El nombre del sistema operativo (servidor) es: $server_os\n";
 
+                echo "<p> c. El idioma del navegador (cliente).</p>";
+
+                $idioma_cliente = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+                echo " El idioma del navegador (cliente) es: $idioma_cliente\n";
+
+
+
 
 
 
