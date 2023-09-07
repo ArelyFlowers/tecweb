@@ -47,14 +47,20 @@
         $a = "PHP server"; 
         $b = &$a;
 
-        echo "<h3> vuelve a mostrar el contenido de cada variable </h3>";
+        echo "<h3> c. vuelve a mostrar el contenido de cada variable </h3>";
 
         echo ($a = "ManejadorSQL"); echo "<br>";
         echo ($b = "MySQL"); echo "<br>";
         echo ($c);  echo "<br>";
         echo ($a = "PHP Server"); echo "<br>";
         echo ($b); 
-       
+
+        echo "<h3> d. Describe en y muestra en la página obtenida qué ocurrió en el segundo bloque de asignaciones </h3>"; 
+        echo "<p>En el segundo bloque ocurrió que la variable c mostró el mismo resultado de la
+        variable anterior es decir, el resultado de b(MySQL), pero debió mostrar el resultado
+        de a(ManejadorSQL), por otro lado  b mostró el valor de A(php server) y este es correcto (a)  </p>";
+
+
     ?>
 </body>
 </html>
