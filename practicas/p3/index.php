@@ -61,6 +61,34 @@
         de a(ManejadorSQL), por otro lado  b mostró el valor de A(php server) y este es correcto (a)  </p>";
 
 
+        echo "<h2> Ejercicio 3. </h2>";
+        echo "<p>Mestra el contenido de cada variable inmediatamente después de cada asignación, verificar la evolución del tipo de estas variables
+         (imprime todos los componentes de los arreglos):</p>";
+
+            $a = "PHP5";
+            echo "\$a = \"$a\"; El tipo de dato es: ". gettype($a)."\n";
+            echo "<br>";
+            $z[] = &$a;
+            echo "\$z[] = &\$a; El tipo de dato es: \$z: ". gettype($z).". El tipo de dato es: \$z[0]:". gettype($z[0])."\n";
+            echo"<br>";
+            $b = "5a version de PHP";
+            echo "\$b = \"$b\"; El tipo de dato es: ". gettype($b)."\n";
+            echo"<br>";
+            @$c = $b * 10;
+            echo "\$c = \$b * 10; El tipo de dato es: " . gettype($c) . "\n";
+            echo"<br>";
+            $a .= $b;
+            echo "\$a .= \$b; El tipo de dato es: " . gettype($a)."\n";
+            echo"<br>";
+            $b *= $c;
+            echo "\$b *= \$c; El tipo de dato es: " . gettype($b)."\n";
+            echo"<br>";
+            $z[0] = "MySQL";
+            echo "\$z[0] = \"MySQL\"; El tipo de dato es: \$z[0]: ". gettype($z[0])."\n";
+
+        
+
+
     ?>
 </body>
 </html>
