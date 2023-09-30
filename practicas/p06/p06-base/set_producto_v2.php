@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "El precio debe ser un número positivo .";
         } else {
             // Insertar datos en la base de datos, incluyendo la imagen
-            $sql = "INSERT INTO productos (nombre, marca, modelo, precio, detalles, unidades, imagen) VALUES (?, ?, ?, ?, ?, ?, ?)";
+            $sql = "INSERT INTO productos (nombre, marca, modelo, precio, detalles, unidades, imagen, eliminado) VALUES (?, ?, ?, ?, ?, ?, ?, 0)";
             $stmt = $conn->prepare($sql);
             $stmt->bind_param("sssdssb", $nombre, $marca, $modelo, $precio, $detalles, $unidades, $imagen_data);
 
